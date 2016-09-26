@@ -48,16 +48,20 @@
                                             <outletCollection property="gestureRecognizers" destination="zrR-oI-nGH" appends="YES" id="uGr-hd-66C"/>
                                         </connections>
                                     </imageView>
-                                    <view contentMode="scaleToFill" placeholderIntrinsicWidth="240" placeholderIntrinsicHeight="44" translatesAutoresizingMaskIntoConstraints="NO" id="cD3-xY-fTt" customClass="RatingControl" customModule="FoodTracker" customModuleProvider="target">
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <view contentMode="scaleToFill" placeholderIntrinsicWidth="240" placeholderIntrinsicHeight="44" layoutMarginsFollowReadableWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cD3-xY-fTt" customClass="RatingControl" customModule="FoodTracker" customModuleProvider="target">
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <accessibility key="accessibilityConfiguration">
                                             <bool key="isElement" value="YES"/>
                                         </accessibility>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="2h3-8v-ii2"/>
+                                        </constraints>
                                     </view>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="Zvr-LA-QQ6" firstAttribute="leading" secondItem="cFr-qU-2tg" secondAttribute="leading" id="2GP-Zv-Wk6"/>
                                     <constraint firstAttribute="trailing" secondItem="Zvr-LA-QQ6" secondAttribute="trailing" id="P4U-6x-rsY"/>
+                                    <constraint firstItem="cD3-xY-fTt" firstAttribute="top" secondItem="R6i-tp-Izy" secondAttribute="bottom" constant="12" id="kk4-nJ-K23"/>
                                 </constraints>
                             </stackView>
                         </subviews>
@@ -66,6 +70,7 @@
                             <constraint firstItem="cFr-qU-2tg" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="4kJ-aP-85a"/>
                             <constraint firstAttribute="trailingMargin" secondItem="cFr-qU-2tg" secondAttribute="trailing" id="HYY-uh-RpC"/>
                             <constraint firstItem="cFr-qU-2tg" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="60" id="U9R-Ky-CLu"/>
+                            <constraint firstItem="cD3-xY-fTt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="uPa-Dd-4w4"/>
                         </constraints>
                     </view>
                     <connections>

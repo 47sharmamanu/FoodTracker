@@ -31,8 +31,8 @@ class RatingControl: UIView {
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
-        let emptyStarImage = UIImage(named: "emptyStar")
-        let filledStarImage = UIImage(named: "filledStar")
+        let emptyStarImage = UIImage(named: "emptyStar.png")
+        let filledStarImage = UIImage(named: "filledStar.png")
         
         
         for _ in 0..<starCount {
@@ -42,7 +42,6 @@ class RatingControl: UIView {
             button.setImage(filledStarImage, for: [.highlighted, .selected])
             button.adjustsImageWhenHighlighted = false
             
-//            button.backgroundColor = UIColor.red
         
         //to catch the touch down event.
         button.addTarget(self, action:#selector(RatingControl.ratingButtonTapped(button:)), for: .touchDown)
